@@ -6,15 +6,17 @@ const environments = {};
 
 // Staging object (default)
 environments.staging = {
-  'port': 3000,
-  'envName': 'staging'
+  'httpPort': 3000,
+  'httpsPort': 3001,
+  'envName': 'staging',
 };
 
 
 // Prod object
 environments.production = {
-  'port': 5000,
-  'envName': 'production'
+  'httpPort': 5000,
+  'httpsPort': 5001,
+  'envName': 'production',
 };
 
 // determine which evn was passed as a cli arg
